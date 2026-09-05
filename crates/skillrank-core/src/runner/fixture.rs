@@ -161,7 +161,7 @@ pub fn docker_available() -> bool {
 }
 
 /// Recursively copy src into an existing dst directory.
-fn copy_tree(src: &Path, dst: &Path) -> Result<(), String> {
+pub(crate) fn copy_tree(src: &Path, dst: &Path) -> Result<(), String> {
     for entry in std::fs::read_dir(src).map_err(|e| e.to_string())? {
         let entry = entry.map_err(|e| e.to_string())?;
         let file_type = entry.file_type().map_err(|e| e.to_string())?;

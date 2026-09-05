@@ -48,7 +48,7 @@
   },
   {
     "id": "design-shotgun-landing-page",
-    "version": "1",
+    "version": "2",
     "title": "Design shotgun landing-page directions",
     "description": "Measures whether a skill helps an agent produce several genuinely distinct, truthful landing-page directions and a useful comparison board.",
     "fixture": {
@@ -72,7 +72,7 @@
   },
   {
     "id": "programmatic-seo-integration-directory",
-    "version": "1",
+    "version": "2",
     "title": "Programmatic SEO integration directory",
     "description": "Measures whether a skill helps an agent turn structured records into useful, differentiated, indexable pages without invented claims.",
     "fixture": {
@@ -96,7 +96,7 @@
   },
   {
     "id": "apple-design-interactive-sheet",
-    "version": "1",
+    "version": "2",
     "title": "Apple-style interruptible sheet interaction",
     "description": "Measures whether a skill helps an agent implement a fluid, accessible, gesture-driven interface rather than a cosmetic imitation.",
     "fixture": {
@@ -120,7 +120,7 @@
   },
   {
     "id": "frontend-design-signal-dashboard",
-    "version": "1",
+    "version": "2",
     "title": "Distinctive frontend dashboard redesign",
     "description": "Measures whether a skill helps an agent replace generic component styling with a coherent, accessible, responsive visual system.",
     "fixture": {
@@ -144,7 +144,7 @@
   },
   {
     "id": "marketing-ideas-constrained-launch",
-    "version": "1",
+    "version": "2",
     "title": "Constrained creator-product launch ideas",
     "description": "Measures whether a skill helps an agent turn a tight launch brief into five concrete, testable, budget-aware marketing plays.",
     "fixture": {

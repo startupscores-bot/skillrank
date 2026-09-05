@@ -10,6 +10,7 @@ use skillrank_core::runner::{
     fixture::{docker_available, GitFixtureProvider, ScriptVerifier},
     Config,
 };
+use std::path::PathBuf;
 use std::process::Command;
 
 pub fn run(args: &[String]) -> i32 {
@@ -17,6 +18,9 @@ pub fn run(args: &[String]) -> i32 {
     let Some(reference) = f.positionals.first().cloned() else {
         eprintln!("usage: eval <ref> --suite <id> [--trials N] [--agent claude|codex] [--model M] [--publish]");
         eprintln!("       --allow-verifier-exec   consent to running the suite's verifier scripts on this machine");
+        eprintln!(
+            "       --artifacts-dir <path>   preserve every completed trial workspace for review"
+        );
         return 2;
     };
     let suite_id = f.value("suite");
@@ -108,6 +112,10 @@ pub fn run(args: &[String]) -> i32 {
     let cfg = Config {
         trials,
         model: f.value("model").to_string(),
+        artifacts_dir: match f.value("artifacts-dir").trim() {
+            "" => None,
+            value => Some(PathBuf::from(value)),
+        },
     };
 
     // Cost estimate + confirmation.
