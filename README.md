@@ -2,6 +2,8 @@
 
 **Find, install, evaluate, and publish AI-agent skills — with real numbers.**
 
+[![SkillRank on StartupScores](https://startupscores.com/badge/skillrank.svg?style=shield&v=combo&theme=dark)](https://startupscores.com/open-source/skillrank)
+
 SkillRank is an open-source CLI and a public registry for agent skills
 (`SKILL.md` packages used by Claude Code, Codex, Copilot, and others). Instead of
 ranking skills by install counts, SkillRank runs reproducible **paired evals** on
